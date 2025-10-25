@@ -86,3 +86,23 @@ console.log(Boolean(0)) // false
 console.log(Boolean("")) // false
 console.log(Boolean(null)); // false
 console.log(Boolean(undefined)) // false
+
+
+// -- How primitive data type methods work --
+
+// Warning null and undefined have no methods
+
+let text = "hello"
+console.log(text.toUpperCase());
+
+// 1) wraps the primitive in a temporary object
+
+// 2) creates string object
+// new String("hello")
+
+// 3) calls the string method
+// String.prototype.toUpperCase()
+
+// 4) returns a new primitive value -> "HELLO"
+
+// 5) destroys the temporary object (the primitive itself remains unchanged)
