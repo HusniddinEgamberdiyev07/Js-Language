@@ -165,8 +165,8 @@ console.log((0.1 + 0.2).toFixed(1) == 0.3); // true -> 0.3 == 0.3
 
 // IsNaN check is it NaN or not
 
-console.log(Number.isNaN("text")); // true
-console.log(Number.isNaN(NaN)); // true
+console.log(isNaN("text")); // true
+console.log(isNaN(NaN)); // true
 
 // IsFinite returns true if it is not NaN / Infinity / -Infinity
 
