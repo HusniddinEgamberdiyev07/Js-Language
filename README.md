@@ -1,15 +1,15 @@
-# These is my JavaScript journey.
+# 🚀 My JavaScript Journey
 ---
-## Progress:
-- [x] Variables
-- [x] DataTypes
-- [ ] Operators
-- [ ] Arrays
-- [ ] Loops
-- [ ] Objects
-- [ ] Functions
-- [ ] Prototypes
-- [ ] Classes
-- [ ] Promises
-- [ ] Error Handling
-- [ ] Modules
+## 📈 Progress
+- [x] 🧩 Variables  
+- [x] 🔢 Data Types  
+- [ ] ➕ Operators  
+- [ ] 🧮 Arrays  
+- [ ] 🔁 Loops  
+- [ ] 🧱 Objects  
+- [ ] ⚙️ Functions  
+- [ ] 🧬 Prototypes  
+- [ ] 🏗️ Classes  
+- [ ] ⏳ Promises  
+- [ ] ❌ Error Handling  
+- [ ] 📦 Modules
