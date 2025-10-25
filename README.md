@@ -1,5 +1,5 @@
 # 🚀 My JavaScript Journey
----
+
 ## 📈 Progress
 - [x] 🧩 Variables  
 - [x] 🔢 Data Types  
