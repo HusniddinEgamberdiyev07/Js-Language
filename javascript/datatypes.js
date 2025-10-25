@@ -11,6 +11,8 @@
 // symbol unique identifier
 // 1 non-primitive type: object
 
+// -- Primitive datatypes --
+
 // number
 let num;
 num = 1;
@@ -31,8 +33,8 @@ console.log(name);
 console.log(`Hello ${name}`);
 
 // boolean
-let isGreateer = 1 < 5;
-console.log(isGreateer);
+let isGreater = 1 < 5;
+console.log(isGreater);
 
 // null
 let age = null;
@@ -41,3 +43,46 @@ console.log(age);
 // undefined
 let surname;
 console.log(surname);
+
+// -- Type conversion --
+
+// String conversion
+
+let value = true;
+value = String(value); // changes true to "true"
+console.log(typeof value);
+
+let num2 = 123;
+num2 = String(num2); // changes 123 to "123"
+console.log(typeof num2);
+
+// Number conversion
+
+// Arithmetic operators (-, *, /, %, **) convert strings to numbers.
+// Only the + operator does NOT — it concatenates if either operand is a string.
+
+let divideString = "10" / "2"; // changes both strings to numbers to divide them
+console.log(divideString);
+console.log("6"-"2");
+
+let str = "123";
+str = Number(str); // changes "123" to 123
+console.log(typeof str);
+
+console.log(Number(undefined)); // NaN
+console.log(Number(null)); // 0
+console.log(Number(true)); // 1
+console.log(Number(false)); // 0
+console.log(Number("    ")); // 0
+console.log(Number("text")); // NaN
+
+// Boolean conversion
+
+console.log(Boolean(1)) // true
+console.log(Boolean(12)) // true
+console.log(Boolean("text")) // true
+
+console.log(Boolean(0)) // false
+console.log(Boolean("")) // false
+console.log(Boolean(null)); // false
+console.log(Boolean(undefined)) // false
