@@ -187,3 +187,123 @@ console.log(parseInt("12.3a")) // 12
 // parseFloat is the same but it returns float nums
 
 console.log(parseFloat("12.3a")) // 12.3
+
+
+
+
+// -- Methods of regular strings --
+
+// We can create string with single and double qoutes or backticks
+
+let txt1 = 'single';
+let txt2 = "double";
+
+let txt3 = `backticks`;
+
+// Single and double are the same but we can enter code in string with backticks with ${code} syntax
+
+console.log(`Sum of 5 and 2 is ${5+2}`);
+
+// We can create multiple line of string with backticks
+
+let long_txt = `Lorem ipsum dolor sit amet, 
+    consectetur adipisicing elit. Ab, quas eum! 
+    Consequuntur debitis labore exercitationem 
+    repellendus id impedit corrupti dolor.`
+
+console.log(long_txt);
+
+
+
+// special characters
+
+// \n -> new line
+console.log("Hello \n Husniddin");
+
+// \', \", \` -> quotes
+console.log("Hello \" Husniddin");
+
+// \\ -> backslash
+console.log("Hello \\ Husniddin");
+
+// \t -> tab
+console.log("Hello \t Husniddin");
+
+
+
+// String length -> tells us how many charackters inside string
+// length is a property
+
+console.log("Hi\nbye".length);
+
+
+
+// Accessing characters
+// To get a character at postions, you can use either str[pos] or str.at(pos)
+// Counting starts from 0
+
+let txt4 = "Hello World";
+console.log(txt4[0]); // H because we started with zero
+console.log(txt4.at(0)); // H 
+
+console.log(txt4[txt4.length -1]); // last charackter. d
+console.log(txt4.at(txt4.length -1)); // d   
+
+// we cam use - indexes too, but with only .at(pos). str[pos] returns undefined.
+
+console.log(txt4[-1]); // undefined
+console.log(txt4.at(-1)); // d
+
+// we can loop strings.
+
+for(let char of txt4){
+    console.log(char);
+}
+
+
+
+// strings are immutable. You can't change them.
+// txt4[0]="B"; -> error
+
+
+
+// Changing the case
+console.log("HelLo".toUpperCase()) // HELLO
+console.log("HelLo".toLowerCase()) // hello
+
+console.log("helLo"[3].toLowerCase()) // l
+
+
+
+
+// Searching for substring
+
+// str.indexOf(substr, pos) -> It looks for substr in str, starting from pos, 
+// and returns the postion where the match is found or -1 if there is nothing
+
+let txt6 = "Hello world, bye world"
+console.log(txt6.indexOf("world", 0)); // 6
+console.log(txt6.indexOf("world", 7)); // 17
+console.log(txt6.indexOf("fewew")); // -1
+
+
+// str.includes(str, pos)
+// -> It looks for substr in str, starting from pos,
+// and returns true where the match is found or false if there is nothing
+
+console.log(txt6.includes("world", 0)); // true
+console.log(txt6.includes("world", 7)); // true
+console.log(txt6.includes("fewew")); // false
+
+console.log(txt6.startsWith("Hello")); // true
+console.log(txt6.endsWith("world")); // true
+
+
+// Getting substring
+
+// str.slice(start, end) -> gives us characters from start to end. Not including end.
+// If there is no end it will start from start till he end.
+// We can use negative numbers too.
+
+console.log(txt6.slice(0, 6)) // Hello
+console.log(txt6.slice(6)) //  world, bye world
