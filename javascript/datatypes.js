@@ -1,4 +1,4 @@
-"use strict";
+"use strict";   // whole script works the “modern” way.
 
 // There 8 types in JavaScript
 // 7 primitive types: string, number, boolean, null, undefined, symbol, bigint
