@@ -1,3 +1,5 @@
+"use strict"
+
 // -- Funtion basics --
 
 // syntax
@@ -153,3 +155,103 @@ console.log(moreLineReturn());  // hello
 // create -> create something
 // check -> check something and return a boolean
 // show -> show something
+
+
+
+// --Function expressions
+
+// Function declaration
+function sayHi3(){
+    console.log("Hello from function declaration");
+}
+sayHi3()
+
+// Function expression. 
+// Function are value.
+
+let sayHi4 = function(){
+    console.log("Hello from function expression");
+}
+
+sayHi4();
+
+
+// with function declaration
+function ask(answer, yes, no){
+    if(answer) yes();
+    else no();
+}
+
+function no(){
+    console.log("You disagreed");
+}
+
+
+function yes(){
+    console.log("You agreed");
+}
+
+ask(true, yes, no)
+
+// with function expression
+
+function ask2(answer, yes, no){
+    if(answer) yes();
+    else no(); 
+}
+
+ask2(false, function(){
+    console.log("you agreed");
+}, function(){
+    console.log("you disagreed");
+})
+
+// Function expression vs Function declaration
+
+// A function expression is created when execution reaches it and is only usable from that moment.
+
+let sayBye = function(){
+    console.log("Bye function expression");
+};
+
+sayBye()
+
+// A function declaration can be called earlier than it is defined. 
+
+sayBye2();
+function sayBye2(){
+    console.log("Bye function declaration");
+}
+
+
+// Function Declaration is only visible inside the code block it resides.
+
+let age = prompt("How old are you?", 18);
+
+// conditional declare a function 
+
+if(age<18){
+    function welcome(){
+        console.log("Hello");
+    }
+}else{
+    function welcome(){
+        console.log("Greetings");
+    }
+}
+
+// welcome()  -> error in strict mode
+
+// Function expression is good for conditional declaring.
+
+let welcome2;
+if(age<18){
+    welcome2=function(){
+        console.log("Hello");
+    }
+}else{
+    welcome2=function(){
+        console.log("Greetings");
+    }
+}
+welcome2();
