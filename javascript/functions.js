@@ -158,7 +158,7 @@ console.log(moreLineReturn());  // hello
 
 
 
-// --Function expressions
+// -- Function expressions --
 
 // Function declaration
 function sayHi3(){
@@ -255,3 +255,40 @@ if(age<18){
     }
 }
 welcome2();
+
+
+
+// -- Arrow Functions -- 
+
+// Arrow functions are like function expression just shorter version.
+// let name = (param1, param2, ...)=>expression;
+
+let add = (a, b) => a+b;
+console.log(add(2, 5));
+
+// this is shorter form of 
+
+// let add = function(a, b){
+//  return a+b
+// };
+
+
+// if we have only one parameter we can remove parenthese aroun parameters
+
+let addTwo = n => n+1;
+console.log(addTwo(1));
+
+// if there is no parameters, you must write parentheses
+
+let getWord = () => "Helllooo";
+console.log(getWord());
+
+// Multiline arrow functions 
+// let name = (param1, param2, ...) => { code };
+
+let checkAge = n => {
+    if(n<18) return true; 
+    else return false;
+};
+
+console.log(checkAge(19));
