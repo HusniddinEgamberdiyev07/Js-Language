@@ -8,11 +8,11 @@ I update this README as I make progress.
 ## 📈 Progress
 - [x] 🧩 Variables  
 - [x] 🔢 Data Types  
-- [ ] ➕ Operators  
+- [x] ➕ Operators  
 - [ ] 🧮 Arrays  
-- [ ] 🔁 Loops  
-- [ ] 🧱 Objects  
-- [ ] ⚙️ Functions  
+- [x] 🔁 Loops  
+- [x] 🧱 Objects  
+- [x] ⚙️ Functions  
 - [ ] 🧬 Prototypes  
 - [ ] 🏗️ Classes  
 - [ ] ⏳ Promises  
